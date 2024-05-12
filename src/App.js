@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from '../src/Header';
+import TextTypefrom from "./Typingeffect";
+import Skills from "./Skills";
 function App() {
 
 
@@ -11,8 +13,8 @@ function App() {
         <Header />
         <main>
 
-          <h1 className='title'>Hi! I'am <br />Mukilan  <br />Software Developer</h1>
-
+          <TextTypefrom text={'Hi! Iam Mukilan  Software Developer'} />
+          <Skills></Skills>
         </main>
 
       </div>
