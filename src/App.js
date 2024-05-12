@@ -12,11 +12,11 @@ function App() {
       <div className='background_style'>
         <Header />
         <main>
-
           <TextTypefrom text={'Hi! Iam Mukilan  Software Developer'} />
-          <Skills></Skills>
         </main>
-
+        <div className='maincontainer'>
+          <Skills></Skills>
+        </div>
       </div>
     </>
   );
