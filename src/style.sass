@@ -1,0 +1,126 @@
+$itemsCount: 6; // Adjust if tabs number changes
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+// General
+body {
+  background: #E3B23C;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #423E37;
+}
+
+// Layout
+.page {
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+// Tabs
+.tabs-controls {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 0 100px;
+  list-style-type: none;
+}
+
+.tabs-controls__link {
+  position: relative;
+  display: block;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #423E37;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #423E37;
+    border-radius: 2px;
+    margin: auto;
+    content: '';
+    transition: width 0.4s;
+  }
+}
+
+.tabs-controls__link--active {
+  &:after {
+    width: 100%;
+  }
+}
+
+// Cards
+.cards-container {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  height: calc(100vh - 205px);
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: #EDEBD7;
+  border: 1px solid #423E37;
+  box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 40px;
+
+  transition: transform 0.3s, opacity 0.2s;
+
+  &.hidden {
+    z-index: 100;
+    background-color: #fff;
+    color: #fff;
+    opacity: 0;
+
+    transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+
+    h1 {
+      color: #fff;
+
+      transition: color 0.5s
+    }
+
+    @for $i from 1 through $itemsCount {
+      &:nth-of-type(#{$i}) {
+        transform: rotate(random(100) - 100 + deg) translateX((random(1) + 100) * 1%) translateY(random(60) * -1%) scale(random(10)*0.1) skewX(random(12) + deg) skewY(random(12) + deg);
+      }
+    }
+  }
+
+  @for $i from 1 through $itemsCount {
+    $zIndexStartValue: $itemsCount + 1; // we don't want an item with 0 index
+    $xValue: ($i - 1) * 10px; // we want to start translating from 0
+    $yValue: ($i - 1) * 10px; // we want to start translating from 0
+    $zIndexValue: $itemsCount - $i; // reverse the z-index, so first item is on top
+
+    &:nth-of-type(#{$i}) {
+      z-index: $zIndexValue;
+      transform: translateX(#{$xValue}) translateY(#{$yValue});
+    }
+  }
+}

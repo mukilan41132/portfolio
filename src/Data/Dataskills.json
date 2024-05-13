@@ -1,0 +1,64 @@
+
+[
+    {
+        "skill": "JavaScript",
+        "img": "https://www.svgrepo.com/show/303206/javascript-logo.svg",
+        "title": "JavaScript "
+    },
+    {
+        "skill": "React",
+        "img": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png",
+        "title": "React "
+    },
+    {
+        "skill": "HTML",
+        "img": "https://www.clipartkey.com/mpngs/m/210-2104705_html-logo-png-transparent-background.png",
+        "title": "HTML "
+    },
+    {
+        "skill": "CSS",
+        "img": "https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3.png",
+        "title": "CSS "
+    },
+    {
+        "skill": "Python",
+        "img": "https://res.cloudinary.com/teepublic/image/private/s--v2JODg9W--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1520050660/production/designs/2416585_0.jpg",
+        "title": "Python "
+    },
+    {
+        "skill": "NODEJS",
+        "img": "https://gitlab.com/uploads/-/system/project/avatar/4469969/node.jpg",
+        "title": "NODEJS"
+    },
+    {
+        "skill": "EXPRESSJS",
+        "img": "https://aglowiditsolutions.com/wp-content/uploads/2018/12/ExpressJS.png",
+        "title": "EXPRESSJS"
+    },
+    {
+        "skill": "MongoDB",
+        "img": "https://www.developer-tech.com/wp-content/uploads/sites/3/2021/02/mongodb-atlas-google-cloud-partnership-nosql-databases-integrations-2.jpg",
+        "title": "MongoDB"
+    },
+    {
+        "skill": "TYPESCRIPT",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+        "title": "TYPESCRIPT"
+    },
+    {
+        "skill": "Bootstrap",
+        "img": "https://th.bing.com/th/id/OIP.9TLG-7Z3C3JRgTl0Lk5dzwHaHN?rs=1&pid=ImgDetMain",
+        "title": "Bootstrap "
+    },
+    {
+        "skill": "MySql",
+        "img": "https://th.bing.com/th/id/OIP.JVt34lGxmm0GAGNNL_mwBgAAAA?rs=1&pid=ImgDetMain",
+        "title": "MySql "
+    },
+    {
+        "skill": "Meterial-ui",
+        "img": "https://img.icons8.com/color/480/material-ui.png",
+        "title": "Meterial-ui "
+    }
+
+]
