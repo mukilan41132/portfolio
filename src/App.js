@@ -140,6 +140,7 @@ function App() {
     <TextTypefrom text={'Hi! Iam Mukilan  Software Developer'} />
 		</div>
 		<div class="card" id="2">
+      {/* <h1>Programming Skills</h1> */}
     <Skills></Skills>
 		</div>
 		<div class="card" id="3">
