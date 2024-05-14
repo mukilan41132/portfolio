@@ -15,7 +15,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   justify-items: center;
   height: 634px;
   align-items: center;
@@ -83,7 +83,7 @@ h2 {
 .background_style {
   background-color: #222831;
   /* height: 100vh; */
-  background-image: url("./im/4002676.jpg");
+  background-image: url("../images/4002676.jpg");
   object-fit: contain;
 }
 
@@ -355,7 +355,7 @@ li:hover {
 @media (min-width: 1024px) {
   .container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-items: center;
     height: 634px;
     align-items: center;
