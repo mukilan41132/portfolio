@@ -15,9 +15,9 @@
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   justify-items: center;
-  height: 634px;
+  height: 400px;
   align-items: center;
   grid-gap: 10px;
   width: 100%;
@@ -42,9 +42,9 @@
 }
 
 .img_style {
-  width: 100px;
-  height: 100px;
-  border-radius: 23px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .maincontainer {
@@ -355,9 +355,9 @@ li:hover {
 @media (min-width: 1024px) {
   .container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     justify-items: center;
-    height: 634px;
+    height: 400px;
     align-items: center;
     grid-gap: 10px;
     width: 100%;
