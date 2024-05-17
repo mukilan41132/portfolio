@@ -123,49 +123,50 @@ function App() {
           </ul>
         </nav>
         <aside className="navBarmobile">
-          <i classNameName="material-icons" id='icon' onClick={toggleVisibility} >menu</i>
+          <i className="material-icons" id='icon' onClick={toggleVisibility} >menu</i>
           {isVisible && (
-            <ul className="nav_flex">
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="2" >About</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="3" >Skills</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="4">Experience</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="5">Contact me</a>
-              </li>
-            </ul>
+          <ul className="nav_flex">
+          <li className="tabs-controls__item">
+            <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
+          </li>
+          <li className="tabs-controls__item">
+            <a href="#" className="tabs-controls__link" data-id="2" >About</a>
+          </li>
+          <li className="tabs-controls__item">
+            <a href="#" className="tabs-controls__link" data-id="3" >Skills</a>
+          </li>
+          <li className="tabs-controls__item">
+            <a href="#" className="tabs-controls__link" data-id="4" >Experience</a>
+          </li>
+          <li className="tabs-controls__item">
+            <a href="#" className="tabs-controls__link" data-id="5" >Contact me</a>
+          </li>
+        </ul>
           )}
         </aside>
+        <section className='section'>
+          <section class="cards-container">
+            <div class="card card--current" id="1">
+              <TextTypefrom text={'Hi! I Am Mukilan Software Developer '} />
+            </div>
+            <div class="card" id="2">
+              <h1>C. Consectetur adipisicing elit</h1>
+              <About />
+            </div>
+            <div class="card" id="3">
+              <h1>Programming Skills</h1>
+              <Skills />
 
-        <section class="cards-container">
-          <div class="card card--current" id="1">
-            <TextTypefrom text={'Hi! '} />
-          </div>
-          <div class="card" id="2">
-            <h1>C. Consectetur adipisicing elit</h1>
-            <About />
-          </div>
-          <div class="card" id="3">
-            <h1>Programming Skills</h1>
-            <Skills />
-
-          </div>
-          <div class="card" id="4">
-            <h1>D. Sed do eiusmod</h1>
-            <Experience />
-          </div>
-          <div class="card" id="5">
-            <h1>E. Ut enim ad minim veniam</h1>
-            <Contact />
-          </div>
+            </div>
+            <div class="card" id="4">
+              <h1>D. Sed do eiusmod</h1>
+              <Experience />
+            </div>
+            <div class="card" id="5">
+              <h1>E. Ut enim ad minim veniam</h1>
+              <Contact />
+            </div>
+          </section>
         </section>
       </div>
     </>
