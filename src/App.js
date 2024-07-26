@@ -8,6 +8,8 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contactme';
 import "./styles/scss-style/style.scss";
+import Typewriter from 'typewriter-effect';
+import Profile from './components/Profile';
 function App() {
   const [oldId, setOldId] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -84,14 +86,12 @@ function App() {
       window.scrollTo(0, scrollY);
       if (timeElapsed < duration) requestAnimationFrame(animation);
     }
-
     function ease(t, b, c, d) {
       t /= d / 2;
       if (t < 1) return c / 2 * t * t + b;
       t--;
       return -c / 2 * (t * (t - 2) - 1) + b;
     }
-
     requestAnimationFrame(animation);
   };
 
@@ -125,32 +125,43 @@ function App() {
         <aside className="navBarmobile">
           <i className="material-icons" id='icon' onClick={toggleVisibility} >menu</i>
           {isVisible && (
-          <ul className="nav_flex">
-          <li className="tabs-controls__item">
-            <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
-          </li>
-          <li className="tabs-controls__item">
-            <a href="#" className="tabs-controls__link" data-id="2" >About</a>
-          </li>
-          <li className="tabs-controls__item">
-            <a href="#" className="tabs-controls__link" data-id="3" >Skills</a>
-          </li>
-          <li className="tabs-controls__item">
-            <a href="#" className="tabs-controls__link" data-id="4" >Experience</a>
-          </li>
-          <li className="tabs-controls__item">
-            <a href="#" className="tabs-controls__link" data-id="5" >Contact me</a>
-          </li>
-        </ul>
+            <ul className="nav_flex">
+              <li className="tabs-controls__item">
+                <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
+              </li>
+              <li className="tabs-controls__item">
+                <a href="#" className="tabs-controls__link" data-id="2" >About</a>
+              </li>
+              <li className="tabs-controls__item">
+                <a href="#" className="tabs-controls__link" data-id="3" >Skills</a>
+              </li>
+              <li className="tabs-controls__item">
+                <a href="#" className="tabs-controls__link" data-id="4" >Experience</a>
+              </li>
+              <li className="tabs-controls__item">
+                <a href="#" className="tabs-controls__link" data-id="5" >Contact me</a>
+              </li>
+            </ul>
           )}
         </aside>
         <section className='section'>
           <section class="cards-container">
             <div class="card card--current" id="1">
-              <TextTypefrom text={'Hi! I Am Mukilan Software Developer '} />
+              <div style={{display:"flex",justifyContent:"center"}}>
+                <Typewriter
+
+                  options={{
+                    wrapperClassName: "title",
+                    strings: ['Hi! I Am Mukilan Software Developer'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
+              <Profile />
             </div>
             <div class="card" id="2">
-              <h1>C. Consectetur adipisicing elit</h1>
+              <h1>About Me</h1>
               <About />
             </div>
             <div class="card" id="3">
@@ -159,11 +170,11 @@ function App() {
 
             </div>
             <div class="card" id="4">
-              <h1>D. Sed do eiusmod</h1>
+              <h1>Experience</h1>
               <Experience />
             </div>
             <div class="card" id="5">
-              <h1>E. Ut enim ad minim veniam</h1>
+              <h1>Contact Me</h1>
               <Contact />
             </div>
           </section>
