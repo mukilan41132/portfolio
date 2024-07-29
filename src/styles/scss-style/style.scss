@@ -1,4 +1,4 @@
-$itemsCount: 6; // Adjust if tabs number changes
+$itemsCount: 6; 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 h1 {
@@ -11,9 +11,6 @@ h1 {
 
 }
 .section {
-  /* border-bottom: none;
-  margin-left: -4px;
-  border-right: solid 1px #dbdce1; */
   height: 1000px;
   overflow-y: scroll;
 }
@@ -143,40 +140,6 @@ h1 {
     transition: transform 0.3s, opacity 0.2s;
     border-radius: 15px;
     background-image: url("../../images/SL-043021-42650-08.jpg");
-//   &.hidden {
-//     z-index: 100;
-//     background-color: #fff;
-//     color: #fff;
-//     opacity: 0;
-//     transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
-
-//     h1 {
-//       color: #fff;
-
-//       transition: color 0.5s
-//     }
-
-//     @for $i from 1 through $itemsCount {
-//       &:nth-of-type(#{$i}) {
-//         transform: rotate(random(100) - 100 + deg) translateX((random(1) + 100) * 1%) translateY(random(60) * -1%) scale(random(10)*0.1) skewX(random(12) + deg) skewY(random(12) + deg);
-//       }
-//     }
-//   }
-
-//   @for $i from 1 through $itemsCount {
-//     $zIndexStartValue: $itemsCount + 1;
-//     $xValue: (
-//       $i - 1) * 10px;
-//     $yValue: (
-//       $i - 1) * 10px;
-//     $zIndexValue: $itemsCount - $i;
-
-//     &:nth-of-type(#{$i}) {
-//       z-index: $zIndexValue;
-//       transform: translateX(#{$xValue}) translateY(#{$yValue}
-//     );
-//   }
-// }
   }
 
   .container_card {
@@ -210,7 +173,6 @@ h1 {
     width: 100%;
     height: 118px;
     border-radius: 15px;
-    /* background-color: #001915c7; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +185,6 @@ h1 {
   width: 67%;
   height: 50px;
   border-radius: 8px;
-  /* background-color: #ffffff; */
   display: flex;
   align-items: center;
   justify-content: center;

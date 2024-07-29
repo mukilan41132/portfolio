@@ -1,15 +1,12 @@
 import './styles/App.css';
-
-import TextTypefrom from "./components/Typingeffect";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Skills from "./components/Skills";
+import Skills from "./Pages/Skills";
 import React, { useState, useEffect } from 'react';
-import About from './components/About';
-import Experience from './components/Experience';
-import Contact from './components/Contactme';
+import About from './Pages/About';
+import Experience from './Pages/Experience';
+import Contact from './Pages/Contactme';
 import "./styles/scss-style/style.scss";
 import Typewriter from 'typewriter-effect';
-import Profile from './components/Profile';
+import Profile from './Pages/Profile';
 function App() {
   const [oldId, setOldId] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
