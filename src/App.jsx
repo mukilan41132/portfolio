@@ -75,7 +75,6 @@ function App() {
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     let startTime = null;
-
     function animation(currentTime) {
       if (startTime === null) startTime = currentTime;
       const timeElapsed = currentTime - startTime;

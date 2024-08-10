@@ -1,6 +1,6 @@
 import '../styles/App.css';
-import React, { useState, useEffect } from 'react';
-import dataskill from '../Data/Dataskills.json';
+import React, { useState } from 'react';
+import dataskill from '../Assets/Data/Dataskills.json';
 
 function Skills() {
   const [Dataskill, setDataskill] = useState(dataskill);
