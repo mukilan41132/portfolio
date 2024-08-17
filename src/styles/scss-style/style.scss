@@ -2,7 +2,7 @@ $itemsCount: 6;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 h1 {
-  margin: 0;
+  margin: -8px;
   font-size: 22px;
   line-height: 1;
   color: #020202;
@@ -82,8 +82,9 @@ h1 {
   position: absolute;
   width: 90%;
   height: 550px;
-  background-color: #EDEBD7;
-  border: 1px solid #423E37;
+  background: rgb(2,0,36);
+  background: linear-gradient(327deg, rgb(122 76 109) 0%, rgb(33 33 172) 38%, rgb(0 154 255) 82%);
+  border: 5px solid #000000;
   box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   padding: 40px;
@@ -164,42 +165,5 @@ h1 {
     padding: 40px;
     transition: transform 0.3s, opacity 0.2s;
     border-radius: 15px;
-    // background-image: url("../../images/SL-043021-42650-08.jpg");
-// 
-
   }
-
-  .container_card {
-    width: 100%;
-    height: 118px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-@media (max-width: 1024px) {
-
-.container_card {
-  width: 67%;
-  height: 50px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.cards-container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  top: 114px;
-  left: 27px;
-}
-
 }

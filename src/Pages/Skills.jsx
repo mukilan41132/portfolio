@@ -1,7 +1,7 @@
 import '../styles/App.css';
 import React from 'react';
 import dataskill from '../Assets/Data/Dataskills.json';
-
+import '../styles/Skills.css'
 function Skills() {
 
   const Dataskill = dataskill
@@ -10,9 +10,20 @@ function Skills() {
       <div className='container'>
         {Dataskill.map((Skill, index) => (
           <div className='container_card' key={index}>
-            <img className='img_style' src={Skill.img} />
-            <p className='fsw'>{Skill.title}</p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="title">FLIP CARD</p>
+                  <p>{Skill.title}</p>
+                </div>
+                <div class="flip-card-back">
+                  <p class="title">BACK</p>
+                  <p>Leave Me</p>
+                </div>
+              </div>
+            </div>
           </div>
+        
         ))}
       </div>
     </>
