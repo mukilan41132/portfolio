@@ -116,37 +116,30 @@ const App: React.FC = () => {
       <div className='background_style'>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">Navbar</a>
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="navbar-collapse collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <li className="nav-item tabs-controls__item">
+                  <a className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Link</a>
+                <li className="nav-item tabs-controls__item">
+                  <a className="tabs-controls__link" data-id="2">About</a>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                <li className="nav-item tabs-controls__item">
+                  <a className="tabs-controls__link" data-id="3" >
+                    Skills
                   </a>
-                  <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                <li className="nav-item tabs-controls__item">
+                  <a className="tabs-controls__link" data-id="4" >Experience</a>
+                </li>
+                <li className="nav-item tabs-controls__item">
+                  <a className="tabs-controls__link" data-id="5" >Contact Me</a>
                 </li>
               </ul>
-              <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
+
             </div>
           </div>
         </nav>
@@ -168,42 +161,12 @@ const App: React.FC = () => {
               <a href="#" className="tabs-controls__link" data-id="5" >Contact me</a>
             </li>
           </ul>
-        </nav>
-        <aside className="navBarmobile">
-          <i className="material-icons" id='icon' onClick={toggleVisibility} >menu</i>
-          {isVisible && (
-            <ul className="nav_flex">
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">Home</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="2" >About</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="3" >Skills</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="4" >Experience</a>
-              </li>
-              <li className="tabs-controls__item">
-                <a href="#" className="tabs-controls__link" data-id="5" >Contact me</a>
-              </li>
-            </ul>
-          )}
-        </aside> */}
+        </nav>*/}
         <section className='section'>
           <section className="cards-container">
             <div className="card card--current" id="1">
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Typewriter
-
-                  options={{
-                    wrapperClassName: "title",
-                    strings: ['Hi! I Am Mukilan Software Developer'],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
+                <Typewriter options={{ wrapperClassName: "title", strings: ['Hi! I Am Mukilan Software Developer'], autoStart: true, loop: true, }} />
               </div>
               <Profile />
             </div>
