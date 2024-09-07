@@ -60,19 +60,20 @@
 
 .container {
     display: flex;
-    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+    /* -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000); */
     overflow-x: auto;
     overscroll-behavior-x: contain;
-    gap: 16px;
     padding: 16px;
+    position: relative;
+    top: 38px;
 }
 
 .container>div {
-    block-size: 25rem;
+    block-size: 21rem;
     aspect-ratio: var(--ratio-square);
-    background-color: var(--surface-2);
+    /* background-color: var(--surface-2); */
     border-radius: var(--radius-3);
-    box-shadow: var(--shadow-4);
+    /* box-shadow: var(--shadow-4); */
 }
 
 .container_card {

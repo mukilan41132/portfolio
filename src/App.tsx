@@ -177,7 +177,6 @@ const App: React.FC = () => {
             <div className="card" id="3">
               <h1>Programming Skills</h1>
               <Skills />
-
             </div>
             <div className="card" id="4">
               <h1>Experience</h1>
@@ -195,4 +194,3 @@ const App: React.FC = () => {
 }
 
 export default App;
-
